@@ -8,6 +8,6 @@ selector_dict['example_find_by_css_selector'] = "cs:.classname"
 selector_dict['example_find_by_classname'] = "cn:classname"
 selector_dict['example_find_by_name'] = "nm:name"
 selector_dict['example_multiple_selector'] = {
-    "default" : "xp://*[contains(@class, 'd-login')]",
-    "chrome_*|iphone_*|android_*" : "xp://*[contains(@class, 'd-login-special')]"
+    "default" : "xp://*[contains(@class, 'default')]",
+    "chrome|iphone|android" : "xp://*[contains(@class, 'special')]"
 }
