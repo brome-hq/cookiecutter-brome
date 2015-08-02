@@ -1,0 +1,10 @@
+pudb
+selenium
+IPython
+lxml
+cssselect
+sqlalchemy
+psutil
+paramiko
+boto
+virtualbox
