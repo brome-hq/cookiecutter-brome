@@ -34,3 +34,10 @@ fvbox:
   vbname: 'ubuntu-firefox'
   vbox_type: 'gui'
   version: '31.0'
+android:
+  appium: true
+  "proxy_element:use_touch_instead_of_click": true
+  deviceName: 'Android'
+  platformName: 'Android'
+  version: '4.2.2'
+  browserName: 'chrome'
