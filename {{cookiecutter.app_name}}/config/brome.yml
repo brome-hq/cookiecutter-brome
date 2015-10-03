@@ -5,7 +5,7 @@ browser:
   window_x_position: 0
   window_y_position: 0
 database:
-  sqlalchemy.url: ''
+  sqlalchemy.url: !!python/unicode 'sqlite:///database.db'
 ec2:
   wait_after_instance_launched: 30
   wait_until_system_and_instance_check_performed: true
