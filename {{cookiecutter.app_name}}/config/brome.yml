@@ -6,6 +6,12 @@ browser:
   window_y_position: 0
 database:
   sqlalchemy.url: !!python/unicode 'sqlite:///database.db'
+saucelabs:
+  username: ''
+  key: ''
+browserstack:
+  username: ''
+  key: ''
 ec2:
   wait_after_instance_launched: 30
   wait_until_system_and_instance_check_performed: true
