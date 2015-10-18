@@ -1,5 +1,6 @@
 firefox:
   browserName: 'Firefox'
+  "browser:maximize_window": true
 
 chrome:
   browserName: 'Chrome'
