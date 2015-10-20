@@ -19,3 +19,6 @@ class Test(BaseTest):
         self.info_log("Running...")
 
         #TEST
+        self.pdriver.get(self.pdriver.get_config_value("project:url"))
+
+        sleep(10)

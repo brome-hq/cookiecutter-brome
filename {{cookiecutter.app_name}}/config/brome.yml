@@ -38,17 +38,18 @@ highlight:
   use_highlight: false
 logger_runner:
   filelogger: true
-  format: '[%(batchid)s]%(message)s'
+  format: !!python/unicode "[%(batchid)s]\e[32m%(message)s\e[0m"
   level: INFO
   streamlogger: true
 logger_test:
   filelogger: true
-  format: '[%(batchid)s](%(testname)s):%(message)s'
+  format: !!python/unicode "[%(batchid)s]\e[34m(%(testname)s)\e[0m:\e[32m%(message)s\e\
+    [0m"
   level: INFO
   streamlogger: true
 project:
-  test_batch_result_path: ''
-  url: ''
+  test_batch_result_path: '/path/to/project/test_results/' #CHANGEME
+  url: 'http://www.google.com' #CHANGEME
 proxy_driver:
   default_timeout: 5
   intercept_javascript_error: false
