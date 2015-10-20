@@ -5,7 +5,7 @@ browser:
   window_x_position: 0
   window_y_position: 0
 database:
-  sqlalchemy.url: !!python/unicode 'sqlite:///database.db'
+  sqlalchemy.url: !!python/unicode 'sqlite:///database.db' #CHANGEME
 saucelabs:
   username: ''
   key: ''
@@ -90,10 +90,10 @@ webserver:
   DEBUG_TB_INTERCEPT_REDIRECTS: false
   HOST: localhost
   PORT: 5000
-  REGISTRATION_TOKEN: ''
-  SECRET_KEY: ''
-  SHOW_TEST_INSTANCES: false
-  SHOW_VIDEO_CAPTURE: false
+  REGISTRATION_TOKEN: 'CHANGEME' #CHANGEME
+  SECRET_KEY: 'CHANGEME' #CHANGEME
+  SHOW_VIDEO_CAPTURE: true
+  SHOW_NETWORK_CAPTURE: true
   SQLALCHEMY_DATABASE_URI: ''
   filelogger: true
   level: INFO
