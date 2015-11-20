@@ -5,8 +5,8 @@ import os
 
 from brome import Brome
 
-from model.selector import selector_dict
-from model.test_dict import test_dict
+from config.selector import selector_dict
+from config.test_dict import test_dict
 
 if __name__ == '__main__':
 

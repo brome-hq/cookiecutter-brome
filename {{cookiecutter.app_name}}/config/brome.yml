@@ -94,7 +94,7 @@ webserver:
   SECRET_KEY: 'CHANGEME' #CHANGEME
   SHOW_VIDEO_CAPTURE: true
   SHOW_NETWORK_CAPTURE: true
-  SQLALCHEMY_DATABASE_URI: ''
+  SHOW_TEST_INSTANCES: true
   filelogger: true
   level: INFO
   streamlogger: true
