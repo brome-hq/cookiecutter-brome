@@ -3,6 +3,7 @@
 import sys
 import os
 
+import yaml
 from brome import Brome
 
 from config.selector import selector_dict
@@ -12,11 +13,21 @@ if __name__ == '__main__':
 
     HERE = os.path.abspath(os.path.dirname(__file__))
 
+    # BROWSERS CONFIG
+    browsers_config_path = os.path.join(HERE, "config", "browsers_config.yml")
+    with open(browsers_config_path) as fd:
+        browsers_config = yaml.load(fd)
+
+    # BROME CONFIG
+    brome_config_path = os.path.join(HERE, "config", "brome.yml")
+    with open(brome_config_path) as fd:
+        config = yaml.load(fd)
+
     brome = Brome(
-        config_path = os.path.join(HERE, "config", "brome.yml"),
+        config = config,
         selector_dict = selector_dict,
         test_dict = test_dict,
-        browsers_config_path = os.path.join(HERE, "config", "browsers_config.yml"),
+        browsers_config = browsers_config,
         absolute_path = HERE
     )
 
