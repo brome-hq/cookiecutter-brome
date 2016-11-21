@@ -1,3 +1,5 @@
+from time import sleep
+
 from brome.core.settings import BROME_CONFIG
 
 from model.basetest import BaseTest
@@ -18,4 +20,6 @@ class Test(BaseTest):
         self.info_log("Running...")
 
         # TEST
-        self.pdriver.get(BROME_CONFIG['project']['url'])
+        # self.pdriver.get(BROME_CONFIG['project']['url'])
+        self.pdriver.get('https://www.google.com')
+        sleep(10)

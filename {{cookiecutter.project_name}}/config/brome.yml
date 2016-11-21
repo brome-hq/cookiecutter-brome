@@ -8,7 +8,7 @@ browser:
   window_x_position: 0
   window_y_position: 0
 database:
-  mongo_database_name: '' #CHANGEME
+  mongo_database_name: 'test-brome' #CHANGEME
   mongo_host: '127.0.0.1'
 ec2:
   wait_after_instance_launched: 30
@@ -45,7 +45,7 @@ logger_test:
   level: 'DEBUG'
   streamlogger: true
 project:
-  test_batch_result_path: '' #CHANGEME
+  test_batch_result_path: false #CHANGEME
   url: '' # CHANGEME
 proxy_driver:
   default_timeout: 5
